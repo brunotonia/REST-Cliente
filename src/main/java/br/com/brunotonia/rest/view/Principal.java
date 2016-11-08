@@ -164,7 +164,7 @@ public class Principal extends javax.swing.JFrame {
             HttpURLConnection connection = null;
             Carro carro = null;
             try {
-                URL url = new URL("http://localhost:8080/CD_REST_Servidor/dados/carro/" + i);
+                URL url = new URL("http://localhost:8080/CD_REST_Servidor/dados/carro/" + lista.get(i).getId());
                 connection = (HttpURLConnection) url.openConnection();
                 InputStream is = connection.getInputStream();
                 InputStreamReader isr = new InputStreamReader(is);
